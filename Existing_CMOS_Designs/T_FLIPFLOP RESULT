@@ -1,0 +1,210 @@
+
+Spectre (R) Circuit Simulator
+Version 21.1.0.546.isr13 64bit -- 4 Nov 2022
+Copyright (C) 1989-2022 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: AELAB   Host: Cadence9   HostID: 7F0100   PID: 128375
+Memory  available: 4.6783 GB  physical: 7.9773 GB
+Linux   : Red Hat Enterprise Linux release 8.7 (Ootpa)
+CPU Type: 12th Gen Intel(R) Core(TM) i3-1215U
+        Socket: Processors [Frequency] (Hyperthreaded Processor)
+        0:       0 [3653.9] (  1 ),  1 [2500.0] (),  2 [2500.0] (  3 )
+                 3 [2500.0] (),  4 [2500.0] (),  5 [2500.0] (),  6 [2500.0] (),  7 [2500.0] ()
+        
+System load averages (1min, 5min, 15min) : 4.1 %, 4.1 %, 2.4 %
+Hyperthreading is enabled
+HPC is enabled
+
+
+Simulating `input.scs' on Cadence9 at 4:05:08 PM, Tue May 12, 2026 (process id: 128375).
+Current working directory: /home/AELAB/simulation/CELL_TFLIPFLOP_XOR_TB/spectre/schematic/netlist
+Command line:
+    /home/install/SPECTRE211/tools.lnx86/bin/spectre -64 input.scs  \
+        +escchars +log ../psf/spectre.out -format psfxl -raw ../psf  \
+        +aps +lqtimeout 900 -maxw 5 -maxn 5 -env ade
+
+Licensing Information:
+[16:05:08.395681] Configured Lic search path (21.01-s002): 5280@CadenceServer
+
+Licensing Information:
+[16:05:08.177179] Periodic Lic check successful
+
+Loading /home/install/SPECTRE211/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /home/install/SPECTRE211/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /home/install/SPECTRE211/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /home/install/SPECTRE211/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /home/install/SPECTRE211/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Reading file:  /home/AELAB/simulation/CELL_TFLIPFLOP_XOR_TB/spectre/schematic/netlist/input.scs
+Reading file:  /home/install/SPECTRE211/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /home/install/FOUNDRY/analog/90nm/models/spectre/gpdk090.scs
+Reading file:  /home/install/FOUNDRY/analog/90nm/models/spectre/gpdk090_mos.scs
+Reading file:  /home/install/FOUNDRY/analog/90nm/models/spectre/gpdk090_mos_iso.scs
+Reading file:  /home/install/FOUNDRY/analog/90nm/models/spectre/gpdk090_resistor.scs
+Reading file:  /home/install/FOUNDRY/analog/90nm/models/spectre/resd_va.va
+Reading link:  /home/install/SPECTRE211/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file:  /home/install/SPECTRE211/tools.lnx86/spectre/etc/ahdl/constants.vams
+Reading link:  /home/install/SPECTRE211/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file:  /home/install/SPECTRE211/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading file:  /home/install/FOUNDRY/analog/90nm/models/spectre/rnoise_va.va
+Reading file:  /home/install/FOUNDRY/analog/90nm/models/spectre/gpdk090_capacitor.scs
+Reading file:  /home/install/FOUNDRY/analog/90nm/models/spectre/gpdk090_diode.scs
+Reading file:  /home/install/FOUNDRY/analog/90nm/models/spectre/gpdk090_bipolar.scs
+Time for NDB Parsing: CPU = 43.889 ms, elapsed = 101.679 ms.
+Time accumulated: CPU = 96.548 ms, elapsed = 101.68 ms.
+Peak resident memory used = 150 Mbytes.
+
+Time for Elaboration: CPU = 8.637 ms, elapsed = 8.60286 ms.
+Time accumulated: CPU = 105.242 ms, elapsed = 110.345 ms.
+Peak resident memory used = 158 Mbytes.
+
+
+Notice from spectre during hierarchy flattening.
+    The value 'psf' specified for the 'checklimitdest' option will no longer be supported in future releases. Use 'spectre -h' to see other recommended values for the 'checklimitdest' option.
+
+
+Time for EDB Visiting: CPU = 482 us, elapsed = 484.943 us.
+Time accumulated: CPU = 105.803 ms, elapsed = 110.909 ms.
+Peak resident memory used = 159 Mbytes.
+
+
+Warning from spectre during initial setup.
+    WARNING (CMI-2477): I0.I0.PM3: `Rds' = 70.2703 uOhm is less than 0.001. Set to 0.
+Notice from spectre during initial setup.
+    Multithreading is disabled due to the size of the design being too small.
+
+
+Global user options:
+         psfversion = 1.4.0
+            vabstol = 1e-06
+            iabstol = 1e-12
+               temp = 27
+               gmin = 1e-12
+             rforce = 1
+           maxnotes = 5
+           maxwarns = 5
+             digits = 5
+               cols = 80
+             pivrel = 0.001
+           sensfile = ../psf/sens.output
+     checklimitdest = psf
+               save = allpub
+             reltol = 0.001
+               tnom = 27
+             scalem = 1
+              scale = 1
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 11
+            bsim3v3 14    
+            vsource 4     
+
+Analysis and control statement inventory:
+               info 7     
+               tran 1     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 0     
+
+
+Notice from spectre during initial setup.
+    APS enabled.
+Warning from spectre during initial setup.
+    WARNING (CMI-2477): I0.I0.PM3: `Rds' = 70.2703 uOhm is less than 0.001. Set to 0.
+
+Time for parsing: CPU = 1.106 ms, elapsed = 2.32887 ms.
+Time accumulated: CPU = 106.959 ms, elapsed = 113.288 ms.
+Peak resident memory used = 162 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+   -   (APS) Multi-threading. The recommended number of threads is 1, consider adding +mt=1 on command line.
+~~~~~~~~~~~~~~~~~~~~~~
+
+*************************************************
+Transient Analysis `tran': time = (0 s -> 200 ms)
+*************************************************
+Trying `homotopy = gmin' for initial conditions.
+Trying `homotopy = source' for initial conditions.
+Trying `homotopy = dptran' for initial conditions.....................
+Trying `homotopy = ptran' for initial conditions...........
+
+Perform DC simulation with solver optimization
+Trying `homotopy = gmin' for initial conditions.
+Trying `homotopy = source' for initial conditions.
+Trying `homotopy = dptran' for initial conditions...........
+Trying `homotopy = ptran' for initial conditions...........
+
+Error found by spectre during IC analysis, during transient analysis `tran'.
+    ERROR (SPECTRE-16080): Cannot print DC solution because DC did not converge. Resolve the convergence issue and rerun the simulation.
+         
+
+The values for those nodes that did not converge on the last Newton iteration are given below.  The manner in which the convergence criteria were not satisfied is also given.
+            Failed test: | Value | > RelTol*Ref + AbsTol
+
+ Top 10 Solution too large Convergence failure:
+    I(V0:p) = -179.025 uA
+        update too large:  | -36.7285 mA | > 895.124 nA + 1 pA
+    V(IN1) = 285.378 mV
+        update too large:  | 150 mV | > 1.42689 mV + 1 uV
+    V(I0.net2) = 795.032 mV
+        update too large:  | -150 mV | > 3.97516 mV + 1 uV
+    V(IN2) = 1.68564 V
+        update too large:  | -150 mV | > 8.4282 mV + 1 uV
+ Top 10 Residue too large Convergence failure:
+    V(IN1) = 285.378 mV
+        residue too large: | 54.6264 uA | > 273.132 nA + 1 pA
+    V(IN2) = 1.68564 V
+        residue too large: | -35.4378 uA | > 177.189 nA + 1 pA
+    V(net1) = 1.8 V
+        residue too large: | -27.5127 mA | > 137.912 uA + 1 pA
+    V(I0.net2) = 795.032 mV
+        residue too large: | -295.764 pA | > 2.14045 pA + 1 pA
+
+DC simulation time: CPU = 2.35528 s, elapsed = 2.35756 s.
+Analysis `tran' was terminated prematurely due to an error.
+finalTimeOP: writing operating point information to rawfile.
+
+Opening the PSF file ../psf/finalTimeOP.info ...
+
+Error found by spectre during DC analysis, during info `finalTimeOP'.
+    ERROR (SPECTRE-16041): The `finalTimeOP' analysis is skipped due to inability to compute operating point. Run 'mmsimpack' (see mmsimpack -h for detailed usage information) to package the netlist and log files as a compressed tar file. Then, contact your Cadence representative or submit a service request via Cadence Online Support, including the tar file and any other information that could help identify the problem.
+
+Analysis `finalTimeOP' was terminated prematurely due to an error.
+modelParameter: writing model parameter values to rawfile.
+
+Opening the PSF file ../psf/modelParameter.info ...
+element: writing instance parameter values to rawfile.
+
+Opening the PSF file ../psf/element.info ...
+outputParameter: writing output parameter values to rawfile.
+
+Opening the PSF file ../psf/outputParameter.info ...
+designParamVals: writing netlist parameters to rawfile.
+
+Opening the PSFASCII file ../psf/designParamVals.info ...
+primitives: writing primitives to rawfile.
+
+Opening the PSFASCII file ../psf/primitives.info.primitives ...
+subckts: writing subcircuits to rawfile.
+
+Opening the PSFASCII file ../psf/subckts.info.subckts ...
+Licensing Information:
+Lic Summary:
+[16:05:11.111200] Cdslmd servers:5280@CadenceServer
+[16:05:11.111210] Feature usage summary:
+[16:05:11.111211] Virtuoso_Multi_mode_Simulation
+
+
+Aggregate audit (4:05:11 PM, Tue May 12, 2026):
+Time used: CPU = 2.47 s, elapsed = 2.49 s, util. = 99.4%.
+Time spent in licensing: elapsed = 9.24 ms.
+Peak memory used = 168 Mbytes.
+Simulation started at: 4:05:08 PM, Tue May 12, 2026, ended at: 4:05:11 PM, Tue May 12, 2026, with elapsed time (wall clock): 2.49 s.
+spectre completes with 2 errors, 2 warnings, and 4 notices.
